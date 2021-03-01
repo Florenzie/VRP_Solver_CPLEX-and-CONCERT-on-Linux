@@ -33,10 +33,11 @@ CPLXLIB = -L$(CPLX)lib/x86-64_linux/static_pic
 CONCLIB = -L$(CONC)lib/x86-64_linux/static_pic
 
 
-# linking & compiling - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-$(DIR)$(NAME):
+clean&comp::
+	rm -f $(DIR)*.o $(DIR)*~ $(NAME) $(DIR)*.log $(DIR)*.lp
+	clear
 	$(COMP) $(SYS) main.cpp $(CPLXINC) $(CONCINC) $(CPLXLIB) $(CONCLIB) -o $(NAME) $(OPTS)
-
+	clear
 
 
 #************************************************************************************************
