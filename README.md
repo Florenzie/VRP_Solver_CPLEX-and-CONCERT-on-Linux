@@ -1,2 +1,5 @@
-# Make-File-CPLEX-and-CONCERT-on-Linux
-An example of a C ++ make file for linking the Cplex and Concert libraries on linux.
+# VRP_Solver_CPLEX-and-CONCERT-on-Linux
+In a terminal:
+
+make
+./VRPSolve ###.dat
